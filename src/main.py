@@ -20,11 +20,11 @@ class Demo(PygameGame):
             print "I am no man!"
 
 
-<<<<<<< HEAD
+
         if pygame.K_m in newkeys:
             print "Does not Happen"
 
-=======
+
         if pygame.K_s in newkeys:
             print "noooooooooooooooo"
 
@@ -39,7 +39,7 @@ class Demo(PygameGame):
 
         if pygame.K_DOWN in keys:
             self.y += 2
->>>>>>> origin/master
+
         if pygame.K_d in newkeys:
             print "Nitwit! Blubber! Oddment! Tweak!"
             
