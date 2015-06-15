@@ -53,7 +53,7 @@ class Demo(PygameGame):
 
         self.drawTextLeft(surface, "Mau", (255, 0, 255), 300, 90, self.font)
 
-        self.drawTextLeft(surface, "Gandalf", (34, 139, 34), 300, 120, self.font)
+        self.drawTextLeft(surface, "Gandalf", (255, 140, 0), 300, 120, self.font)
 
         self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
         return
