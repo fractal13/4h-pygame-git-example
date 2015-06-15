@@ -32,19 +32,23 @@ class Demo(PygameGame):
 
         if pygame.K_DOWN in keys:
             self.y += 2
+        if pygame.K_c in newkeys:
+            print "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn"
+
+        if pygame.K_z in newkeys:
+            print "42 is the answer."
         return
 
     def paint(self, surface):
         rect = pygame.Rect(0,0,self.width,self.height)
         surface.fill((0,0,0),rect )
-        
-        # Add (don't replace) an awesome literary character
-        #                                   color            x   y
 
         self.drawTextLeft(surface, "Bilbo", (255, 0, 255), 300, 30, self.font)
+
+        self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font)
+
+        self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
         
-        # Add (don't replace) an awesome literary character
-        #                                   color            x   y
         self.drawTextLeft(surface, "Spider-man", (255, 255, 0), self.x, self.y, self.font)
 
         return
