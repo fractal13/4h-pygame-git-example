@@ -35,7 +35,7 @@ class Demo(PygameGame):
         #                                   color            x   y
         self.drawTextLeft(surface, "Bilbo", (200, 255, 0), 300, 30, self.font)
 
-        self.drawTextLeft(surface, "Jonas", (200, 0, 255), 300, 50, self.font)
+        self.drawTextLeft(surface, "Jonas", (200, 0, 255), 300, 60, self.font)
 
         self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font)
 
