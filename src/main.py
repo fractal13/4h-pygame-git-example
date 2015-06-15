@@ -18,6 +18,13 @@ class Demo(PygameGame):
 
         if pygame.K_j in newkeys:
             print "The apple had changed. Just for an instant. It had changed in mid-air."
+
+        if pygame.K_c in newkeys:
+            print "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn"
+
+        if pygame.K_z in newkeys:
+            print "42 is the answer."
+
         return
 
     def paint(self, surface):
@@ -27,7 +34,12 @@ class Demo(PygameGame):
         # Add (don't replace) an awesome literary character
         #                                   color            x   y
         self.drawTextLeft(surface, "Bilbo", (200, 255, 0), 300, 30, self.font)
+
         self.drawTextLeft(surface, "Jonas", (200, 0, 255), 300, 50, self.font)
+
+        self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font)
+
+        self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
         
         return
 
