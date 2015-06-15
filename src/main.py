@@ -19,6 +19,9 @@ class Demo(PygameGame):
         if pygame.K_j in newkeys:
             print "The apple had changed. Just for an instant. It had changed in mid-air."
 
+        if pygame.K_m in newkeys:
+            print "Does not Happen"
+    
         if pygame.K_c in newkeys:
             print "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn"
 
@@ -26,6 +29,8 @@ class Demo(PygameGame):
             print "42 is the answer."
 
         return
+
+       
 
     def paint(self, surface):
         rect = pygame.Rect(0,0,self.width,self.height)
@@ -37,9 +42,14 @@ class Demo(PygameGame):
 
         self.drawTextLeft(surface, "Jonas", (200, 0, 255), 300, 60, self.font)
 
+        self.drawTextLeft(surface, "Bilbo", (255, 0, 255), 300, 30, self.font)
+        
+        self.drawTextLeft(surface, "Mau", (255, 0, 255), 300, 90, self.font)
+
         self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font)
 
         self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
+
         
         return
 
