@@ -16,13 +16,6 @@ class Demo(PygameGame):
         if pygame.K_b in newkeys:
             print "I am no man!"
 
-
-
-
-
-
-
-
         if pygame.K_d in newkeys:
             print "Nitwit! Blubber! Oddment! Tweak!"
             
@@ -32,11 +25,8 @@ class Demo(PygameGame):
         if pygame.K_m in newkeys:
             print "Does not happen"
 
-
-
         if pygame.K_g in newkeys:
             print "You shall not pass!"
-
 
         if pygame.K_j in newkeys:
             print "The apple had changed. Just for an instant. It had changed in mid-air."
@@ -61,33 +51,15 @@ class Demo(PygameGame):
 
         self.drawTextLeft(surface, "Bilbo", (255, 0, 255), 300, 30, self.font)
 
-
-
-
-        self.drawTextLeft(surface, "Albus Percival Wulfric Brian Dumbledore", (64, 0, 230), 240, 130, self.font)
-
-
-
-        self.drawTextLeft(surface, "Albus Percival Wulfric Brian Dumbledore", (64, 0, 230), 240, 130, self.font)
-
-
-        
-
+        self.drawTextLeft(surface, "Marvin", (64, 0, 230), 10, 10, self.font)       
 
         self.drawTextLeft(surface, "Albus Percival Wulfric Brian Dumbledore", (64, 0, 230), 240, 130, self.font)
 
         self.drawTextLeft(surface, "Mau", (255, 0, 255), 300, 90, self.font)
 
-
         self.drawTextLeft(surface, "Gandalf", (34, 139, 34), 300, 120, self.font)
 
-
         self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
-
-
-        
-
-
         return
 
        
