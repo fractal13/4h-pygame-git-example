@@ -56,6 +56,8 @@ class Demo(PygameGame):
         self.drawTextLeft(surface, "Gandalf", (34, 139, 34), 300, 120, self.font)
 
         self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
+
+        self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font)
         return
 
        
