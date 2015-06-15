@@ -7,7 +7,10 @@ class Demo(PygameGame):
         # PygameGame sets self.width and self.height        
         PygameGame.__init__(self, "Git Demo", width_px, height_px, frames_per_second)
         pygame.font.init()
+
         self.font = pygame.font.SysFont("Times New Roman",14)
+
+
         self.font = pygame.font.SysFont("OCR A Extended",14)
         return
 
@@ -16,6 +19,7 @@ class Demo(PygameGame):
         # Add (don't replace) an awesome literary quote, for a different key press
         if pygame.K_b in newkeys:
             print "I am no man!"
+
 
         if pygame.K_d in newkeys:
             print "Nitwit! Blubber! Oddment! Tweak!"
@@ -26,14 +30,9 @@ class Demo(PygameGame):
             print "For a moment, nothing happened. Then, after a second or so, nothing continued to happen."
 
 
+
         if pygame.K_g in newkeys:
             print "You shall not pass!"
-
-
-        if pygame.K_m in newkeys:
-            print "Does not Happen"
-
-
 
         if pygame.K_j in newkeys:
             print "The apple had changed. Just for an instant. It had changed in mid-air."
@@ -41,7 +40,6 @@ class Demo(PygameGame):
         if pygame.K_m in newkeys:
             print "Does not Happen"
     
-
         if pygame.K_c in newkeys:
             print "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn"
 
@@ -71,7 +69,7 @@ class Demo(PygameGame):
 
 
 
-        
+        self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font)
 
 
         self.drawTextLeft(surface, "Mau", (255, 0, 255), 300, 90, self.font)
@@ -79,11 +77,8 @@ class Demo(PygameGame):
 
         self.drawTextLeft(surface, "Marvin", (255, 0, 255), 300, 70, self.font)
 
-        self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font)
-
 
         self.drawTextLeft(surface, "Gandalf", (34, 139, 34), 300, 120, self.font)
-
 
 
         self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
