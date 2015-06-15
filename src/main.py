@@ -29,7 +29,7 @@ class Demo(PygameGame):
         #                                   color            x   y
         self.drawTextLeft(surface, "Bilbo", (255, 0, 255), 300, 30, self.font)
 
-        self.drawTextLeft(surface, "Gandalf", (34, 139, 34), 300, 90, self.font)
+        self.drawTextLeft(surface, "Gandalf", (34, 139, 34), 300, 120, self.font)
 
         return
 
