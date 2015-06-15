@@ -65,7 +65,7 @@ class Demo(PygameGame):
 
         self.drawTextLeft(surface, "Bilbo", (255, 0, 255), 300, 30, self.font)
 
-        self.drawTextLeft(surface, "Albus Percival Wulfric Brian Dumbledore", (64, 0, 230), 240, 50, self.font)
+        self.drawTextLeft(surface, "Albus Percival Wulfric Brian Dumbledore", (64, 0, 230), 240, 130, self.font)
 
 
 
