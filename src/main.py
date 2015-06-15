@@ -8,6 +8,8 @@ class Demo(PygameGame):
         PygameGame.__init__(self, "Git Demo", width_px, height_px, frames_per_second)
         pygame.font.init()
         self.font = pygame.font.SysFont("OCR A Extended",14)
+
+        self.font2 = pygame.font.SysFont("Times New Roman",14)
         return
 
     def game_logic(self, keys, newkeys, buttons, newbuttons, mouse_position):
@@ -57,7 +59,7 @@ class Demo(PygameGame):
 
         self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
 
-        self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font)
+        self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font2)
         return
 
        
