@@ -17,8 +17,18 @@ class Demo(PygameGame):
             print "I am no man!"
 
 
+
         if pygame.K_m in newkeys:
             print "For a moment, nothing happened. Then, after a second or so, nothing continued to happen."
+
+
+        if pygame.K_g in newkeys:
+            print "You shall not pass!"
+
+
+        if pygame.K_m in newkeys:
+            print "Does not Happen"
+
 
 
         if pygame.K_j in newkeys:
@@ -34,9 +44,12 @@ class Demo(PygameGame):
         if pygame.K_z in newkeys:
             print "42 is the answer."
 
+
+
         return
 
-       
+
+        return
 
     def paint(self, surface):
         rect = pygame.Rect(0,0,self.width,self.height)
@@ -49,17 +62,34 @@ class Demo(PygameGame):
         self.drawTextLeft(surface, "Jonas", (200, 0, 255), 300, 60, self.font)
 
         self.drawTextLeft(surface, "Bilbo", (255, 0, 255), 300, 30, self.font)
+
+
         
+
+
         self.drawTextLeft(surface, "Mau", (255, 0, 255), 300, 90, self.font)
+
 
         self.drawTextLeft(surface, "Marvin", (255, 0, 255), 300, 70, self.font)
 
         self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font)
 
+
+        self.drawTextLeft(surface, "Gandalf", (34, 139, 34), 300, 120, self.font)
+
+
+
         self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
 
+
         
+
+
         return
+
+       
+        
+
 
     def drawTextLeft(self, surface, text, color, x, y, font):
         textobj = font.render(text, False, color)
