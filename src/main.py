@@ -7,8 +7,9 @@ class Demo(PygameGame):
         # PygameGame sets self.width and self.height        
         PygameGame.__init__(self, "Git Demo", width_px, height_px, frames_per_second)
         pygame.font.init()
+        self.x = 300
+        self.y = 500
         self.font = pygame.font.SysFont("OCR A Extended",14)
-
         self.font2 = pygame.font.SysFont("Times New Roman",14)
         return
 
@@ -19,9 +20,26 @@ class Demo(PygameGame):
             print "I am no man!"
 
 
+<<<<<<< HEAD
         if pygame.K_m in newkeys:
             print "Does not Happen"
 
+=======
+        if pygame.K_s in newkeys:
+            print "noooooooooooooooo"
+
+        if pygame.K_RIGHT in keys:
+            self.x += 2
+
+        if pygame.K_UP in keys:
+            self.y -= 2
+
+        if pygame.K_LEFT in keys:
+            self.x -= 2
+
+        if pygame.K_DOWN in keys:
+            self.y += 2
+>>>>>>> origin/master
         if pygame.K_d in newkeys:
             print "Nitwit! Blubber! Oddment! Tweak!"
             
@@ -84,6 +102,9 @@ class Demo(PygameGame):
         self.drawTextLeft(surface, "Gandalf", (255, 140, 0), 300, 120, self.font)
 
         self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
+        
+        self.drawTextLeft(surface, "Spider-man", (255, 255, 0), self.x, self.y, self.font)
+
 
         self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font2)
 
