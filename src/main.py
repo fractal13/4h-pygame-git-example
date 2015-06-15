@@ -15,6 +15,11 @@ class Demo(PygameGame):
         # Add (don't replace) an awesome literary quote, for a different key press
         if pygame.K_b in newkeys:
             print "I am no man!"
+        if pygame.K_d in newkeys:
+            print "Nitwit! Blubber! Oddment! Tweak!"
+            
+        
+            
         return
 
     def paint(self, surface):
@@ -24,6 +29,7 @@ class Demo(PygameGame):
         # Add (don't replace) an awesome literary character
         #                                   color            x   y
         self.drawTextLeft(surface, "Bilbo", (255, 0, 255), 300, 30, self.font)
+        self.drawTextLeft(surface, "Dumbledore", (64, 0, 230), 280, 60, self.font)
         
         return
 
