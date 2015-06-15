@@ -17,8 +17,13 @@ class Demo(PygameGame):
             print "I am no man!"
 
 
+
         if pygame.K_g in newkeys:
             print "You shall not pass!"
+
+
+        if pygame.K_m in newkeys:
+            print "Does not Happen"
 
 
         if pygame.K_j in newkeys:
@@ -32,6 +37,10 @@ class Demo(PygameGame):
 
         if pygame.K_z in newkeys:
             print "42 is the answer."
+
+
+
+        return
 
 
         return
@@ -48,7 +57,10 @@ class Demo(PygameGame):
 
         self.drawTextLeft(surface, "Bilbo", (255, 0, 255), 300, 30, self.font)
 
+
         
+
+
         self.drawTextLeft(surface, "Mau", (255, 0, 255), 300, 90, self.font)
 
 
@@ -57,7 +69,9 @@ class Demo(PygameGame):
 
         self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
 
+
         
+
 
         return
 
