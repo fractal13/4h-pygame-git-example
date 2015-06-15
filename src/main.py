@@ -7,7 +7,7 @@ class Demo(PygameGame):
         # PygameGame sets self.width and self.height        
         PygameGame.__init__(self, "Git Demo", width_px, height_px, frames_per_second)
         pygame.font.init()
-        self.font = pygame.font.SysFont("OCR A Extended",14)
+        self.font = pygame.font.SysFont("Times New Roman",14)
         return
 
     def game_logic(self, keys, newkeys, buttons, newbuttons, mouse_position):
