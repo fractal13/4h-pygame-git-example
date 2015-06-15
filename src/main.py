@@ -16,6 +16,10 @@ class Demo(PygameGame):
     def game_logic(self, keys, newkeys, buttons, newbuttons, mouse_position):
         
         # Add (don't replace) an awesome literary quote, for a different key press
+
+        if pygame.K_a in newkeys:
+            print "The one with ravishing hair."
+
         if pygame.K_b in newkeys:
             print "I am no man!"
 
@@ -102,6 +106,8 @@ class Demo(PygameGame):
         self.drawTextLeft(surface, "Gandalf", (255, 140, 0), 300, 120, self.font)
 
         self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
+        
+        self.drawTextLeft(surface, "Ender's Shadow (bean)", (0, 255, 0), 30, 400, self.font)
         
         self.drawTextLeft(surface, "Spider-man", (255, 255, 0), self.x, self.y, self.font)
 
