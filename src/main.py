@@ -43,9 +43,6 @@ class Demo(PygameGame):
 
         if pygame.K_j in newkeys:
             print "The apple had changed. Just for an instant. It had changed in mid-air."
-
-        if pygame.K_m in newkeys:
-            print "Does not Happen"
     
         if pygame.K_c in newkeys:
             print "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn"
