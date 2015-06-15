@@ -11,7 +11,7 @@ class Demo(PygameGame):
         self.font = pygame.font.SysFont("Times New Roman",14)
 
 
-        self.font = pygame.font.SysFont("OCR A Extended",14)
+        self.font2 = pygame.font.SysFont("OCR A Extended",14)
         return
 
     def game_logic(self, keys, newkeys, buttons, newbuttons, mouse_position):
@@ -68,7 +68,7 @@ class Demo(PygameGame):
         #                                   color            x   y
         self.drawTextLeft(surface, "Bilbo", (200, 255, 0), 300, 30, self.font)
 
-        self.drawTextLeft(surface, "Jonas", (200, 0, 255), 300, 60, self.font)
+        self.drawTextLeft(surface, "Jonas", (200, 0, 255), 300, 60, self.font2)
 
         self.drawTextLeft(surface, "Bilbo", (255, 0, 255), 300, 30, self.font)
 
