@@ -47,9 +47,9 @@ class PygameGame:
             newbuttons = set()
             for e in pygame.event.get():
                 # did the user try to close the window?
-                # if e.type == pygame.QUIT:
-                #     pygame.quit()
-                #     return
+                if e.type == pygame.QUIT:
+                    pygame.quit()
+                    return
 
                 # did the user just press the escape key?
                 if e.type == pygame.KEYDOWN and e.key == pygame.K_ESCAPE:
