@@ -28,7 +28,8 @@ class Demo(PygameGame):
         if pygame.K_n in newkeys:
             print "For a moment, nothing happened. Then, after a second or so, nothing continued to happen."
 
-
+        if pygame.K_m in newkeys:
+            print "Does not happen"
 
 
 >>>>>>> origin/master
