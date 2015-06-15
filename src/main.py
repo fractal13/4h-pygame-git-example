@@ -18,12 +18,22 @@ class Demo(PygameGame):
 
 
 
+<<<<<<< HEAD
+=======
+        if pygame.K_d in newkeys:
+            print "Nitwit! Blubber! Oddment! Tweak!"
+            
+
+
+        if pygame.K_n in newkeys:
+            print "For a moment, nothing happened. Then, after a second or so, nothing continued to happen."
+
+
+
+
+>>>>>>> origin/master
         if pygame.K_g in newkeys:
             print "You shall not pass!"
-
-
-        if pygame.K_m in newkeys:
-            print "Does not Happen"
 
 
         if pygame.K_j in newkeys:
