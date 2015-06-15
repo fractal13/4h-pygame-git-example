@@ -16,6 +16,7 @@ class Demo(PygameGame):
         if pygame.K_b in newkeys:
             print "I am no man!"
 
+
         if pygame.K_d in newkeys:
             print "Nitwit! Blubber! Oddment! Tweak!"
             
@@ -24,6 +25,7 @@ class Demo(PygameGame):
 
         if pygame.K_m in newkeys:
             print "Does not happen"
+
 
 
         if pygame.K_g in newkeys:
@@ -52,6 +54,13 @@ class Demo(PygameGame):
         self.drawTextLeft(surface, "Jonas", (200, 0, 255), 300, 60, self.font)
 
         self.drawTextLeft(surface, "Bilbo", (255, 0, 255), 300, 30, self.font)
+
+
+
+        self.drawTextLeft(surface, "Albus Percival Wulfric Brian Dumbledore", (64, 0, 230), 240, 130, self.font)
+
+
+        
 
 
         self.drawTextLeft(surface, "Albus Percival Wulfric Brian Dumbledore", (64, 0, 230), 240, 130, self.font)
