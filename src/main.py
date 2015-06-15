@@ -18,6 +18,10 @@ class Demo(PygameGame):
 
 
 
+        if pygame.K_m in newkeys:
+            print "For a moment, nothing happened. Then, after a second or so, nothing continued to happen."
+
+
         if pygame.K_g in newkeys:
             print "You shall not pass!"
 
@@ -26,12 +30,14 @@ class Demo(PygameGame):
             print "Does not Happen"
 
 
+
         if pygame.K_j in newkeys:
             print "The apple had changed. Just for an instant. It had changed in mid-air."
 
         if pygame.K_m in newkeys:
             print "Does not Happen"
     
+
         if pygame.K_c in newkeys:
             print "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn"
 
@@ -64,7 +70,13 @@ class Demo(PygameGame):
         self.drawTextLeft(surface, "Mau", (255, 0, 255), 300, 90, self.font)
 
 
+        self.drawTextLeft(surface, "Marvin", (255, 0, 255), 300, 70, self.font)
+
+        self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font)
+
+
         self.drawTextLeft(surface, "Gandalf", (34, 139, 34), 300, 120, self.font)
+
 
 
         self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
