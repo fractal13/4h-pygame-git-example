@@ -7,7 +7,7 @@ class Demo(PygameGame):
         # PygameGame sets self.width and self.height        
         PygameGame.__init__(self, "Git Demo", width_px, height_px, frames_per_second)
         pygame.font.init()
-        self.font = pygame.font.SysFont("Times New Roman",14)
+        self.font = pygame.font.SysFont("OCR A Extended",14)
         return
 
     def game_logic(self, keys, newkeys, buttons, newbuttons, mouse_position):
@@ -18,7 +18,13 @@ class Demo(PygameGame):
 
         if pygame.K_m in newkeys:
             print "Does not Happen"
-        
+
+        if pygame.K_j in newkeys:
+            print "The apple had changed. Just for an instant. It had changed in mid-air."
+
+        if pygame.K_m in newkeys:
+            print "Does not Happen"
+    
         if pygame.K_c in newkeys:
             print "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn"
 
@@ -34,6 +40,10 @@ class Demo(PygameGame):
         
         # Add (don't replace) an awesome literary character
         #                                   color            x   y
+        self.drawTextLeft(surface, "Bilbo", (200, 255, 0), 300, 30, self.font)
+
+        self.drawTextLeft(surface, "Jonas", (200, 0, 255), 300, 60, self.font)
+
         self.drawTextLeft(surface, "Bilbo", (255, 0, 255), 300, 30, self.font)
 
         self.drawTextLeft(surface, "Mau", (255, 0, 255), 300, 90, self.font)
@@ -41,7 +51,7 @@ class Demo(PygameGame):
         self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font)
 
         self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
-        
+       
         return
 
     def drawTextLeft(self, surface, text, color, x, y, font):
