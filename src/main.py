@@ -64,15 +64,13 @@ class Demo(PygameGame):
         self.drawTextLeft(surface, "Bilbo", (255, 0, 255), 300, 30, self.font)
 
 
-        
+        self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font)
 
 
         self.drawTextLeft(surface, "Mau", (255, 0, 255), 300, 90, self.font)
 
 
         self.drawTextLeft(surface, "Marvin", (255, 0, 255), 300, 70, self.font)
-
-        self.drawTextLeft(surface, "Cthulhu", (0, 255, 0), 295, 45, self.font)
 
 
         self.drawTextLeft(surface, "Gandalf", (34, 139, 34), 300, 120, self.font)
