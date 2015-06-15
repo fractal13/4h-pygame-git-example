@@ -107,7 +107,7 @@ class Demo(PygameGame):
 
         self.drawTextLeft(surface, "Ender", (0, 255, 0), 30, 300, self.font)
         
-        self.drawTextLeft(surface, "Ender's Shadow (bean)", (0, 255, 0), 30, 400, self.font)
+        self.drawTextLeft(surface, "Ender's Shadow (bean)", (0, 255, 0), 30, 450, self.font)
         
         self.drawTextLeft(surface, "Spider-man", (255, 255, 0), self.x, self.y, self.font)
 
