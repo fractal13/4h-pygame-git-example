@@ -19,15 +19,13 @@ class Demo(PygameGame):
 
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
+
+
+
         if pygame.K_d in newkeys:
             print "Nitwit! Blubber! Oddment! Tweak!"
             
-
-
         if pygame.K_n in newkeys:
             print "For a moment, nothing happened. Then, after a second or so, nothing continued to happen."
 
@@ -49,11 +47,6 @@ class Demo(PygameGame):
         if pygame.K_z in newkeys:
             print "42 is the answer."
 
-
-
-        return
-
-
         return
 
     def paint(self, surface):
@@ -69,18 +62,19 @@ class Demo(PygameGame):
         self.drawTextLeft(surface, "Bilbo", (255, 0, 255), 300, 30, self.font)
 
 
-<<<<<<< HEAD
+
 
         self.drawTextLeft(surface, "Albus Percival Wulfric Brian Dumbledore", (64, 0, 230), 240, 130, self.font)
 
 
-=======
+
         self.drawTextLeft(surface, "Albus Percival Wulfric Brian Dumbledore", (64, 0, 230), 240, 130, self.font)
 
->>>>>>> origin/master
 
         
 
+
+        self.drawTextLeft(surface, "Albus Percival Wulfric Brian Dumbledore", (64, 0, 230), 240, 130, self.font)
 
         self.drawTextLeft(surface, "Mau", (255, 0, 255), 300, 90, self.font)
 
