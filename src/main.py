@@ -45,13 +45,9 @@ class Demo(PygameGame):
         
         # Add (don't replace) an awesome literary character
         #                                   color            x   y
-        self.drawTextLeft(surface, "Bilbo", (200, 255, 0), 300, 30, self.font)
-
         self.drawTextLeft(surface, "Jonas", (200, 0, 255), 300, 60, self.font)
 
         self.drawTextLeft(surface, "Bilbo", (255, 0, 255), 300, 30, self.font)
-
-        self.drawTextLeft(surface, "Albus Percival Wulfric Brian Dumbledore", (64, 0, 230), 240, 130, self.font)
 
         self.drawTextLeft(surface, "Albus Percival Wulfric Brian Dumbledore", (64, 0, 230), 240, 130, self.font)
 
