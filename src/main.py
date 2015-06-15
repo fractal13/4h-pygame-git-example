@@ -7,8 +7,8 @@ class Demo(PygameGame):
         # PygameGame sets self.width and self.height        
         PygameGame.__init__(self, "Git Demo", width_px, height_px, frames_per_second)
         pygame.font.init()
-        self.x = 282
-        self.y = 30
+        self.x = 300
+        self.y = 500
         self.font = pygame.font.SysFont("OCR A Extended",14)
         self.font2 = pygame.font.SysFont("Times New Roman",14)
         return
