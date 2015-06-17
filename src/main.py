@@ -1,5 +1,6 @@
 from pygame_game import PygameGame
 import pygame, pygame.locals
+import gtkrc
 
 class Demo(PygameGame):
 
